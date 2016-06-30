@@ -21,11 +21,11 @@ Wind speed
 Sunrise time and sunset time
 
 ## Links
-[Codepen App](http://codepen.io/max-severin/full/pbbvgW/){:target="_blank"}
+<a href="http://codepen.io/max-severin/full/pbbvgW/" terget="_blank">Codepen App</a>
 
 ## Used API and icon-set:
-[Geolocation API](http://ip-api.com/){:target="_blank"}
+<a href="http://ip-api.com/" terget="_blank">Geolocation API</a>
 
-[Weather API ](http://openweathermap.org/api/){:target="_blank"}
+<a href="http://openweathermap.org/api/" terget="_blank">Weather API</a>
 
-[Weather Icons](https://erikflowers.github.io/weather-icons/){:target="_blank"}
+<a href="https://erikflowers.github.io/weather-icons/" terget="_blank">Weather Icons</a>
