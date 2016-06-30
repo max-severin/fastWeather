@@ -2,11 +2,11 @@
 
 **angularJS Web App and ionic Mobile App**
 
-![fastWeather-clear-day](https://github.com/max-severin/fastWeather/master/screenshots/clear-day.png)
-![fastWeather-thunderstorm](https://github.com/max-severin/fastWeather/master/screenshots/thunderstorm.png)
+![fastWeather-clear-day](https://raw.githubusercontent.com/max-severin/fastWeather/master/screenshots/clear-day.png)
+![fastWeather-thunderstorm](https://raw.githubusercontent.com/max-severin/fastWeather/master/screenshots/thunderstorm.png)
 
-![fastWeather-clear-night](https://github.com/max-severin/fastWeather/master/screenshots/clear-night.png)
-![fastWeather-snow](https://github.com/max-severin/fastWeather/master/screenshots/snow.png)
+![fastWeather-clear-night](https://raw.githubusercontent.com/max-severin/fastWeather/master/screenshots/clear-night.png)
+![fastWeather-snow](https://raw.githubusercontent.com/max-severin/fastWeather/master/screenshots/snow.png)
 
 ## Description
 The app allows you to see the weather in your local city at the moment. The city is determined by the ip.
