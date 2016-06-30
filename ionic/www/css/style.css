@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'SigmarOne';
+    src: url('../fonts/SigmarOne.ttf');
+}
+
+* {
+    color: #DDD;
+    font-family: 'SigmarOne', cursive;
+    font-size: 1.1em;
+}
+
+.jumbotron {
+    background-color: rgba(51, 51, 51, 1);
+    min-height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.jumbotron.color-thunderstorm {
+    background: linear-gradient(to right bottom, rgb(75, 0, 130) 50%, rgb(66, 0, 116) 50%);
+}
+.jumbotron.color-drizzle {
+    background: linear-gradient(to right bottom, rgb(70, 130, 180) 50%, rgb(66, 116, 166) 50%);
+}
+.jumbotron.color-rain {
+    background: linear-gradient(to right bottom, rgb(70, 130, 180) 50%, rgb(66, 116, 166) 50%);
+}
+.jumbotron.color-snow {
+    background: linear-gradient(to right bottom, rgb(111, 121, 151) 50%, rgb(96, 116, 146) 50%);
+}
+.jumbotron.color-clear-day {
+    background: linear-gradient(to right bottom, rgb(1, 153, 204) 50%, rgb(1, 138, 184) 50%);
+}
+.jumbotron.color-clear-night {
+    background: linear-gradient(to right bottom, rgb(11, 21, 51) 50%, rgb(6, 16, 46) 50%);
+}
+.jumbotron.color-clouds-day {
+    background: linear-gradient(to right bottom, rgb(128, 128, 128) 50%, rgb(105, 105, 105) 50%);
+}
+.jumbotron.color-clouds-night {
+    background: linear-gradient(to right bottom, rgb(51, 51, 51) 50%, rgb(46, 46, 46) 50%);
+}
+
+.jumbotron p {
+    margin: 15px 0;
+}
+
+#temp-cel-wrap, #temp-fah-wrap {
+    color: #DDD;
+    cursor: pointer;
+    display: none;
+    font-size: 2em;
+    height: 34px;
+    border-bottom: 1px dotted;  
+    text-decoration: none;
+}
+
+#temp-cel-wrap.active, #temp-fah-wrap.active {
+    display: inline-block;
+}
+
+.border-top {
+    border-top: 1px solid #CCC;
+}
+.border-bottom {
+    border-bottom: 1px solid #CCC;
+}
+
+.weather.wi {
+    display: none;
+    font-size: 3em;
+}
+.wi.wi-show {
+    display: block;
+}
+
+#temp-wrap {
+    margin: 15px 0 5px;
+}
+#weather-wrap {
+    margin: 5px 0 15px;
+    word-wrap: break-word;
+}
+
+.error-message {
+    color: rgb(255, 51, 51);
+    font-size: 0.8em;
+}

@@ -1,0 +1,95 @@
+<ion-view view-title="fastWeather">
+    <ion-content class="jumbotron" ng-class="{
+    'color-thunderstorm': weather.toLowerCase() == 'thunderstorm',
+    'color-drizzle': weather.toLowerCase() == 'drizzle',
+    'color-rain': weather.toLowerCase() == 'rain',
+    'color-snow': weather.toLowerCase() == 'snow',
+    'color-clear-day': weather.toLowerCase() == 'clear' && partOfDay() == 'day',
+    'color-clear-night': weather.toLowerCase() == 'clear' && partOfDay() == 'night',
+    'color-clouds-day': weather.toLowerCase() == 'clouds' && partOfDay() == 'day',
+    'color-clouds-night': weather.toLowerCase() == 'clouds' && partOfDay() == 'night'
+}" on-swipe="onSwipeRefresh()" >
+            <div class="row">
+                <div class="text-left border-bottom col">
+                    <p>{{wDay}}</p>
+                </div>
+                <div class="text-center border-bottom col">
+                    <p>{{month}} {{mDay}}</p>
+                </div>
+                <div class="text-right border-bottom col">
+                    <p>{{hr}}:{{min}}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center border-bottom col">
+                    <p class="city-wrapper">
+                        <span id="city">{{city}}</span>
+                        <span id="country">{{country}}</span>
+                    </p> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-center col" ng-if="loadingTemp">
+                    <p>
+                        <i class="fa fa-cog fa-spin fa-5x fa-fw"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-left col">
+                    <p>
+                        <i class="weather wi wi-thunderstorm" ng-class="{'wi-show': weather.toLowerCase() == 'thunderstorm'}"></i>
+                        <i class="weather wi wi-showers" ng-class="{'wi-show': weather.toLowerCase() == 'drizzle'}"></i>
+                        <i class="weather wi wi-rain" ng-class="{'wi-show': weather.toLowerCase() == 'rain'}"></i>
+                        <i class="weather wi wi-snow" ng-class="{'wi-show': weather.toLowerCase() == 'snow'}"></i>
+                        <i class="weather wi wi-day-sunny" ng-class="{'wi-show': weather.toLowerCase() == 'clear' && partOfDay() == 'day'}"></i>
+                        <i class="weather wi wi-night-clear" ng-class="{'wi-show': weather.toLowerCase() == 'clear' && partOfDay() == 'night'}"></i>
+                        <i class="weather wi wi-day-cloudy" ng-class="{'wi-show': weather.toLowerCase() == 'clouds' && partOfDay() == 'day'}"></i>
+                        <i class="weather wi wi-night-alt-cloudy" ng-class="{'wi-show': weather.toLowerCase() == 'clouds' && partOfDay() == 'night'}"></i>
+                    </p>
+                </div>
+                <div class="text-right col">
+                    <p id="temp-wrap">
+                        <a href="#" id="temp-cel-wrap" ng-class="{'active': isCelActive}" ng-click="activeUnit()">
+                            <span id="temp-cel">{{tempCel}}</span> &#176;<span id="unit-cel">{{unitCel}}</span>
+                        </a>
+                        <a href="#" id="temp-fah-wrap" ng-class="{'active': isFahActive}" ng-click="activeUnit()">
+                            <span id="temp-fah">{{tempFah}}</span> &#176;<span id="unit-fah">{{unitFah}}</span>
+                        </a>
+                    </p>
+                    <p id="weather-wrap">
+                        <span>{{weather}}</span>
+                    </p> 
+                </div>
+            </div>
+            <div class="row" ng-if="error">
+                <div class="text-center error-message col">
+                    {{error}}
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-left border-top col">
+                    <p>
+                        <i class="wi wi-raindrop"></i> {{humidity}}
+                    </p>
+                </div>
+                <div class="text-right border-top col">
+                    <p>
+                        <i class="wi wi-small-craft-advisory"></i> {{wind}}
+                    </p> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="text-left border-top col">
+                    <p>
+                        <i class="wi wi-sunrise"></i> {{sunrise}}
+                    </p>
+                </div>
+                <div class="text-right border-top col">
+                    <p>
+                        <i class="wi wi-sunset"></i> {{sunset}}
+                    </p> 
+                </div>
+            </div>
+    </ion-content>
+</ion-view>
