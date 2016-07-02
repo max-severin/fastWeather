@@ -84,10 +84,10 @@ angular.module('fastWeather.controllers', [])
                 $scope.wind = data.wind.speed + ' m/s';
 
                 var sunset = new Date(data.sys.sunset * 1000);
-                $scope.sunset = sunset.getHours() + ':' + sunset.getMinutes();
+                $scope.sunset = ('0' + sunset.getHours()).substr(-2) + ':' + ('0' + sunset.getMinutes()).substr(-2);
 
                 var sunrise = new Date(data.sys.sunrise * 1000);
-                $scope.sunrise = sunrise.getHours() + ':' + sunrise.getMinutes();
+                $scope.sunrise = ('0' + sunrise.getHours()).substr(-2) + ':' + ('0' + sunrise.getMinutes()).substr(-2);
 
             }).error(function(data, status) {
 
