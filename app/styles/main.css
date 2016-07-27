@@ -30,6 +30,9 @@
 .jumbotron.color-snow {
 	background: linear-gradient(to right bottom, rgb(111, 121, 151) 50%, rgb(96, 116, 146) 50%);
 }
+.jumbotron.color-fog {
+	background: linear-gradient(to right bottom, rgb(111, 121, 151) 50%, rgb(96, 116, 146) 50%);
+}
 .jumbotron.color-clear-day {
 	background: linear-gradient(to right bottom, rgb(1, 153, 204) 50%, rgb(1, 138, 184) 50%);
 }

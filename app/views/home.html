@@ -3,6 +3,7 @@
 	'color-drizzle': weather.toLowerCase() == 'drizzle',
 	'color-rain': weather.toLowerCase() == 'rain',
 	'color-snow': weather.toLowerCase() == 'snow',
+	'color-fog': weather.toLowerCase() == 'fog',
 	'color-clear-day': weather.toLowerCase() == 'clear' && partOfDay() == 'day',
 	'color-clear-night': weather.toLowerCase() == 'clear' && partOfDay() == 'night',
 	'color-clouds-day': weather.toLowerCase() == 'clouds' && partOfDay() == 'day',
@@ -42,6 +43,7 @@
 					<i class="weather wi wi-showers" ng-class="{'wi-show': weather.toLowerCase() == 'drizzle'}"></i>
 					<i class="weather wi wi-rain" ng-class="{'wi-show': weather.toLowerCase() == 'rain'}"></i>
 					<i class="weather wi wi-snow" ng-class="{'wi-show': weather.toLowerCase() == 'snow'}"></i>
+					<i class="weather wi wi-fog" ng-class="{'wi-show': weather.toLowerCase() == 'fog'}"></i>
 					<i class="weather wi wi-day-sunny" ng-class="{'wi-show': weather.toLowerCase() == 'clear' && partOfDay() == 'day'}"></i>
 					<i class="weather wi wi-night-clear" ng-class="{'wi-show': weather.toLowerCase() == 'clear' && partOfDay() == 'night'}"></i>
 					<i class="weather wi wi-day-cloudy" ng-class="{'wi-show': weather.toLowerCase() == 'clouds' && partOfDay() == 'day'}"></i>
